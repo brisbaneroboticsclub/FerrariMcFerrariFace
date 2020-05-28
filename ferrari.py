@@ -16,6 +16,7 @@ print('-------------------')
 print('Clean up any existing GPIO settings.')
 print('-------------------')
 
+GPIO.setwarnings(False)
 GPIO.cleanup()
 
 print('-------------------')
@@ -600,7 +601,7 @@ if __name__ == "__main__":
     while 1:
 
         inp = int(input('1. Test steering (steps). \
-        \n2. test steering (cycle) \
+        \n2. Test steering (cycle) \
         \n3. Test rear wheels. \
         \n4. Test camera. \
         \n5. Read Xbox via Bluetooth.\
